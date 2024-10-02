@@ -1,0 +1,65 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #333;
+}
+
+.controller {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 90%;
+  height: 75%;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  transition: transform 0.1s ease;
+}
+
+/* Different button colors */
+.red-btn {
+  background-color: red;
+}
+
+.blue-btn {
+  background-color: blue;
+}
+
+.green-btn {
+  background-color: green;
+}
+
+.yellow-btn {
+  background-color: yellow;
+  color: black;
+}
+
+.btn:active {
+  transform: scale(0.9); /* Makes the button press animation */
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Mobile specific adjustments */
+@media only screen and (orientation: portrait) {
+  .controller {
+    height: 10%;
+    transform: translateY(300%);
+  }
+}
